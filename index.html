@@ -834,13 +834,29 @@
         // 通过 shields.io API 获取 star 数
         async function fetchStarCount(owner, repo) {
             try {
-                const response = await fetch(`https://img.shields.io/github/stars/${owner}/${repo}.json`);
+                const response = await fetch(`https://img.shields.io/github/stars/${owner}/${repo}.json`, {
+                    // 添加超时和缓存控制
+                    signal: AbortSignal.timeout(5000), // 5秒超时
+                    cache: 'default'
+                });
+
+                if (!response.ok) {
+                    console.warn(`GitHub API rate limit or error for ${owner}/${repo}`);
+                    return null;
+                }
+
                 const data = await response.json();
+
+                // 检查是否返回了错误信息
+                if (data.message && data.message.includes('Unable to select')) {
+                    console.warn(`GitHub token pool exhausted for ${owner}/${repo}`);
+                    return null;
+                }
+
                 // shields.io 返回格式化后的值，如 "62.9k" 或 "13k"
-                // 标准化为统一格式
-                return normalizeStarCount(data.message);
+                return normalizeStarCount(data.value || data.message);
             } catch (error) {
-                console.error(`Failed to fetch stars for ${owner}/${repo}:`, error);
+                // 静默处理错误，不在控制台显示（避免过多错误信息）
                 return null;
             }
         }

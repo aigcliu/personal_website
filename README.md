@@ -15,8 +15,12 @@ A modern, responsive personal website showcasing my professional profile, resear
 
 ```
 personal_website/
-├── index.html          # Main HTML file
+├── index.template.html # HTML template source
+├── content-data.json   # Structured content data (news, projects, publications)
+├── build.js            # Build script (render template and refresh stars)
+├── index.html          # Generated main HTML file
 ├── style.css           # All styles (dark/light themes, responsive design)
+├── app.js              # Client-side interactions (theme, nav, collapsibles, stars)
 ├── profile.jpg         # Profile photo
 ├── .gitignore          # Git ignore configuration
 └── README.md           # Project documentation
@@ -26,11 +30,17 @@ personal_website/
 
 ### View Locally
 
-Simply open `index.html` in your web browser:
+Build the site first, then open `index.html` in your web browser:
+
+```bash
+node build.js
+```
+
+For local preview:
 
 ```bash
 # For a simple local server (optional)
-python -m http.server 8000
+python3 -m http.server 8000
 # Then visit: http://localhost:8000
 ```
 
@@ -64,12 +74,16 @@ Or use any other local server:
 ### Update Personal Information
 
 Edit [index.html](index.html) to update:
-- Name, title, and affiliation (lines 13, 55-60)
-- Contact information (lines 63-72)
-- Social media links (lines 76-96)
-- About section content (lines 106-122)
-- Projects (lines 129-285)
-- Publications (lines 290-769)
+- Name, title, and affiliation
+- Contact information
+- Social media links
+- About section content
+- Publications section content
+
+Edit [content-data.json](content-data.json) to update:
+- News list
+- Project cards (name, repo, stars, description, status)
+- Publications categories and paper items
 
 ### Change Profile Photo
 
@@ -84,13 +98,14 @@ Edit CSS variables in [style.css](style.css) (lines 4-44):
 
 ### Add/Remove Projects
 
-Projects are defined in the JavaScript section (lines 783-793) and displayed as cards. Update the `projects` array and corresponding HTML sections.
+Projects are defined in [content-data.json](content-data.json), rendered by [build.js](build.js), and enhanced in [app.js](app.js).
 
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup with ARIA accessibility
 - **CSS3**: Custom properties, flexbox, grid, animations
-- **Vanilla JavaScript**: Theme switching, dynamic content, GitHub API integration
+- **Structured Content Data**: `content-data.json` centralizes News/Projects/Publications content
+- **Vanilla JavaScript**: Centralized in `app.js` (theme switching, collapsibles, nav active state, GitHub stars integration)
 - **GitHub Shields API**: Real-time star count fetching
 
 ## 📝 Key Sections

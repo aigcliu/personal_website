@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yi Liu is a Senior Technical Manager at Baidu PaddlePaddle, leading large model (LLM/VLM) initiatives across the AI stack, with research interests in computer vision and vision-language models.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://liuyi.ai/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Yi Liu">
+    <meta property="og:title" content="Yi Liu - Senior Technical Manager, PaddlePaddle">
+    <meta property="og:description" content="Senior Technical Manager at Baidu PaddlePaddle. Leading large model (LLM/VLM) initiatives across the AI stack.">
+    <meta property="og:url" content="https://liuyi.ai/">
+    <meta property="og:image" content="https://liuyi.ai/profile.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yi Liu - Senior Technical Manager, PaddlePaddle">
+    <meta name="twitter:description" content="Senior Technical Manager at Baidu PaddlePaddle. Leading large model (LLM/VLM) initiatives across the AI stack.">
+    <meta name="twitter:image" content="https://liuyi.ai/profile.jpg">
+
+    <!-- Browser UI -->
+    <meta name="theme-color" content="#0a0e27">
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Yi Liu",
+            "alternateName": "刘毅",
+            "url": "https://liuyi.ai/",
+            "image": "https://liuyi.ai/profile.jpg",
+            "jobTitle": "Senior Technical Manager",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Baidu"
+            },
+            "affiliation": {
+                "@type": "Organization",
+                "name": "PaddlePaddle Team, Baidu"
+            },
+            "alumniOf": [
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Nanyang Technological University"
+                },
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Harbin Institute of Technology"
+                }
+            ],
+            "sameAs": [
+                "https://github.com/aigcliu",
+                "https://scholar.google.com/citations?user=d_wa7ogAAAAJ&hl=en",
+                "https://www.linkedin.com/in/liuyi1990/"
+            ]
+        }
+    </script>
+    <title>Yi Liu - Senior Technical Manager, PaddlePaddle</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <noscript>
+        <style>
+            .publication-list.collapsed {
+                max-height: none !important;
+                opacity: 1 !important;
+            }
+
+            .collapsible-title.collapsed .collapse-icon {
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <h1 class="header-name">Yi Liu (<span lang="zh-Hans">刘毅</span>)</h1>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <a href="#about" class="nav-link" aria-label="Navigate to About section">About</a>
+                <a href="#news" class="nav-link" aria-label="Navigate to News section">News</a>
+                <a href="#projects" class="nav-link" aria-label="Navigate to Projects section">Projects</a>
+                <a href="#publications" class="nav-link" aria-label="Navigate to Publications section">Publications</a>
+                <!-- 主题切换按钮 -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                    <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg id="moonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主容器 -->
+    <div class="main-container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar" role="complementary" aria-label="Author information">
+            <div class="sidebar-content">
+                <!-- 个人照片 -->
+                <div class="avatar-wrapper">
+                    <img src="profile.jpg" alt="Yi Liu" class="avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="avatar-placeholder">
+                        <svg viewBox="0 0 24 24" width="60" height="60">
+                            <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 基本信息 -->
+                <h2 class="sidebar-name">Dr. Yi Liu</h2>
+                <p class="sidebar-title">Senior Technical Manager</p>
+                <p class="sidebar-affiliation">
+                    PaddlePaddle Team, Baidu<br>
+                
+                </p>
+
+                <!-- 联系方式 -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <span>liuyi.ntu AT gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong>
+                        <span>Shenzhen, Beijing, Shanghai</span>
+                    </div>
+                </div>
+
+                <!-- 社交链接 -->
+                <div class="social-links">
+                    <a href="mailto:liuyi.ntu@gmail.com" class="social-link" title="Email" aria-label="Send email to Yi Liu">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                            <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/aigcliu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="Visit Yi Liu's GitHub profile">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                            <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=d_wa7ogAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="social-link" title="Google Scholar" aria-label="Visit Yi Liu's Google Scholar profile">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                            <path fill="currentColor" d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/liuyi1990/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="Visit Yi Liu's LinkedIn profile">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                            <path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 右侧主内容区 -->
+        <main class="main-content" role="main">
+            <!-- 关于我 -->
+            <section id="about" class="content-section" aria-labelledby="about-title">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="section-content">
+                    <p>
+                        I am a Senior Technical Manager at Baidu, leading the large model team at PaddlePaddle. We work across the full AI stack for large language models—from infrastructure and development tools to algorithms and applications—to power the ERNIE large model series, including ERNIE 3.5, 4.0, 4.5, and 5.0.
+                    </p>
+                    <p>
+                        I have led over 10 open-source projects at Baidu that have collectively earned 150,000+ GitHub stars, such as PaddleOCR, ERNIE, PaddleFormers, and PaddleX, among others. These projects power critical AI applications worldwide—from multilingual document understanding to large language model training and deployment at scale.
+                    </p>
+                    <p>
+                        My technical expertise spans computer vision, vision-language models, large language models, and autonomous driving. I hold a Ph.D. from Nanyang Technological University, Singapore (2017) and a B.Eng. from Harbin Institute of Technology, China (2013). Before joining Baidu in 2018, I was a Data Scientist at HP Labs Singapore. At Baidu, I have also collaborated extensively with the Apollo team on autonomous driving technologies, contributing to Robotaxi and AD 2.0—an experience I deeply value.
+                    </p>
+                    <div class="hiring-callout">
+                        <div class="hiring-icon">🔥</div>
+                        <div class="hiring-content">
+                            <h3 class="hiring-title">We're Hiring!</h3>
+                            <p class="hiring-text">We are always looking for talented interns and full-time engineers to join our team in areas including: Large Language Models, Reinforcement Learning, Multimodal Algorithms, Computer Vision, and LLM Agent Applications. If you are interested, please feel free to send your resume to my email.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 最新动态 -->
+            <section id="news" class="content-section" aria-labelledby="news-title">
+                <h2 id="news-title" class="section-title">News</h2>
+                <div class="section-content">
+                    <ul class="news-list">
+{{NEWS_ITEMS}}
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 核心项目 -->
+            <section id="projects" class="content-section" aria-labelledby="projects-title">
+                <h2 id="projects-title" class="section-title">Key Open-Source Projects</h2>
+                <div class="section-content">
+                    <div class="project-grid">
+{{PROJECT_CARDS}}
+                    </div>
+                </div>
+            </section>
+
+            <!-- 学术论文 -->
+            {{PUBLICATIONS_SECTION}}
+
+            <!-- 页脚 -->
+            <footer class="footer" role="contentinfo">
+                <p>Last updated: February 2026</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

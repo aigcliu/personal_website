@@ -64,6 +64,18 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <noscript>
+        <style>
+            .publication-list.collapsed {
+                max-height: none !important;
+                opacity: 1 !important;
+            }
+
+            .collapsible-title.collapsed .collapse-icon {
+                transform: none !important;
+            }
+        </style>
+    </noscript>
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -193,11 +205,11 @@
                         </li>
                         <li class="news-item">
                             <span class="news-date">Jan 2026</span>
-                            <span class="news-text">We released <a href="https://github.com/PaddlePaddle/Paddleformers" target="_blank" rel="noopener noreferrer">PaddleFormers 1.0</a>: It supports training for LLMs and VLMs, with extreme performance optimizations for key models like DeepSeek-V3 and GLM-4.5-Air, significantly outperforming Megatron-LM in training speed.</span>
+                            <span class="news-text">We released <a href="https://github.com/PaddlePaddle/PaddleFormers" target="_blank" rel="noopener noreferrer">PaddleFormers 1.0</a>: It supports training for LLMs and VLMs, with extreme performance optimizations for key models like DeepSeek-V3 and GLM-4.5-Air, significantly outperforming Megatron-LM in training speed.</span>
                         </li>
                         <li class="news-item">
                             <span class="news-date">Dec 2025</span>
-                            <span class="news-text">We officially launched <a href="https://www.paddleocr.com" target="_blank" rel="noopener noreferrer">PaddleOCR.com</a> , offering free hands-on experience with advanced document parsing capabilities.</span>
+                            <span class="news-text">We officially launched <a href="https://www.paddleocr.com" target="_blank" rel="noopener noreferrer">PaddleOCR.com</a>, offering free hands-on experience with advanced document parsing capabilities.</span>
                         </li>
                         <li class="news-item">
                             <span class="news-date">Nov 2025</span>
@@ -241,18 +253,18 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">62.9k</span>
+                                    <span class="stat-number">71.6k</span>
                                 </a>
                             </div>
                         </div>
                         <p class="project-description">
                             A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages with ultra-lightweight system, powering popular projects like Umi-OCR, OmniParser, MinerU, and RAGFlow.
                         </p>
-                    </div>
+                        </div>
 
-                    <div class="project-card">
+                        <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">
                                 PaddleFormers
@@ -261,9 +273,9 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleFormers" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">12.9k</span>
+                                    <span class="stat-number">13k</span>
                                 </a>
                             </div>
                         </div>
@@ -281,9 +293,9 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/ERNIE" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">7.5k</span>
+                                    <span class="stat-number">7.7k</span>
                                 </a>
                             </div>
                         </div>
@@ -301,9 +313,9 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleX" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">5.9k</span>
+                                    <span class="stat-number">6.1k</span>
                                 </a>
                             </div>
                         </div>
@@ -320,9 +332,9 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleDetection" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">13.1k</span>
+                                    <span class="stat-number">14.1k</span>
                                 </a>
                             </div>
                         </div>
@@ -339,18 +351,18 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleNLP" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">12.3k</span>
+                                    <span class="stat-number">12.9k</span>
                                 </a>
                             </div>
                         </div>
                         <p class="project-description">
                             Easy-to-use NLP library with 45+ architectures and 500+ pretrained models. Supports wide-range of tasks from research to industrial applications including Neural Search, Question Answering, Information Extraction, and Sentiment Analysis.
                         </p>
-                    </div>
+                        </div>
 
-                    <div class="project-card">
+                        <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">
                                 PaddleSeg
@@ -358,18 +370,18 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleSeg" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
-                                    <span class="stat-number">9.2k</span>
+                                    <span class="stat-number">9.3k</span>
                                 </a>
                             </div>
                         </div>
                         <p class="project-description">
                             Easy-to-use image segmentation library providing 45+ models and 150+ pre-trained models. Supports Semantic Segmentation, Interactive Segmentation, Panoptic Segmentation, Image Matting, and 3D Segmentation with complete flow from labeling to deployment.
                         </p>
-                    </div>
+                        </div>
 
-                    <div class="project-card">
+                        <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">
                                 PaddleClas
@@ -377,7 +389,7 @@
                             <div class="project-stats">
                                 <a href="https://github.com/PaddlePaddle/PaddleClas" target="_blank" rel="noopener noreferrer" class="github-link">
                                     <svg class="github-logo" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                                     </svg>
                                     <span class="stat-number">5.8k</span>
                                 </a>
@@ -392,17 +404,17 @@
             </section>
 
             <!-- 学术论文 -->
+                        <!-- 学术论文 -->
             <section id="publications" class="content-section" aria-labelledby="publications-title">
                 <h2 id="publications-title" class="section-title">Publications</h2>
                 <div class="section-content">
 
-                    <!-- Preprints -->
                     <div class="publication-category">
-                        <h3 class="publication-category-title collapsible-title collapsed" data-target="arxiv-papers" role="button" aria-expanded="false" aria-controls="arxiv-papers" tabindex="0">
+                        <h3 id="arxiv-papers-title" class="publication-category-title collapsible-title collapsed" data-target="arxiv-papers" role="button" aria-expanded="false" aria-controls="arxiv-papers" tabindex="0">
                             arXiv Papers <span class="collapse-icon" aria-hidden="true">▼</span>
                         </h3>
 
-                        <div class="publication-list collapsed" id="arxiv-papers" role="region" aria-labelledby="arxiv-papers">
+                        <div class="publication-list collapsed" id="arxiv-papers" role="region" aria-labelledby="arxiv-papers-title">
                         <div class="publication">
                             <h3 class="publication-title">
                                 <span class="publication-number">[A19]</span> <a href="https://arxiv.org/abs/2601.21957" target="_blank" rel="noopener noreferrer" class="publication-title-link">PaddleOCR-VL-1.5: Towards a Multi-Task 0.9B VLM for Robust In-the-Wild Document Parsing</a>
@@ -595,13 +607,12 @@
                         </div>
                     </div>
 
-                    <!-- Conference Papers -->
                     <div class="publication-category">
-                        <h3 class="publication-category-title collapsible-title collapsed" data-target="conference-papers" role="button" aria-expanded="false" aria-controls="conference-papers" tabindex="0">
+                        <h3 id="conference-papers-title" class="publication-category-title collapsible-title collapsed" data-target="conference-papers" role="button" aria-expanded="false" aria-controls="conference-papers" tabindex="0">
                             Conference Papers <span class="collapse-icon" aria-hidden="true">▼</span>
                         </h3>
 
-                        <div class="publication-list collapsed" id="conference-papers" role="region" aria-labelledby="conference-papers">
+                        <div class="publication-list collapsed" id="conference-papers" role="region" aria-labelledby="conference-papers-title">
                         <div class="publication">
                             <h3 class="publication-title">
                                 <span class="publication-number">[C20]</span> <a href="https://arxiv.org/abs/2508.00412" target="_blank" rel="noopener noreferrer" class="publication-title-link">Sortblock: Similarity-Aware Feature Reuse for Diffusion Model</a>
@@ -804,13 +815,12 @@
                         </div>
                     </div>
 
-                    <!-- Journal Papers -->
                     <div class="publication-category">
-                        <h3 class="publication-category-title collapsible-title collapsed" data-target="journal-papers" role="button" aria-expanded="false" aria-controls="journal-papers" tabindex="0">
+                        <h3 id="journal-papers-title" class="publication-category-title collapsible-title collapsed" data-target="journal-papers" role="button" aria-expanded="false" aria-controls="journal-papers" tabindex="0">
                             Journal Papers <span class="collapse-icon" aria-hidden="true">▼</span>
                         </h3>
 
-                        <div class="publication-list collapsed" id="journal-papers" role="region" aria-labelledby="journal-papers">
+                        <div class="publication-list collapsed" id="journal-papers" role="region" aria-labelledby="journal-papers-title">
                         <div class="publication">
                             <h3 class="publication-title">
                                 <span class="publication-number">[J7]</span> <a href="https://ieeexplore.ieee.org/document/10742428/" target="_blank" rel="noopener noreferrer" class="publication-title-link">DSDC-GCN: Decoupled Static-Dynamic Co-Occurrence Graph Convolutional Networks for Skeleton-Based Action Recognition</a>
@@ -893,231 +903,6 @@
         </main>
     </div>
 
-    <!-- 实时 GitHub Stars 数据获取脚本 -->
-    <script>
-        // 项目仓库映射表
-        const projects = [
-            { owner: 'PaddlePaddle', repo: 'PaddleOCR' },
-            { owner: 'PaddlePaddle', repo: 'PaddleFormers' },
-            { owner: 'PaddlePaddle', repo: 'ERNIE' },
-            { owner: 'PaddlePaddle', repo: 'PaddleX' },
-            { owner: 'PaddlePaddle', repo: 'PaddleDetection' },
-            { owner: 'PaddlePaddle', repo: 'PaddleNLP' },
-            { owner: 'PaddlePaddle', repo: 'PaddleSeg' },
-            { owner: 'PaddlePaddle', repo: 'PaddleClas' }
-        ];
-
-        // 标准化 star 数量格式
-        function normalizeStarCount(shieldsValue) {
-            if (!shieldsValue) return null;
-
-            // shields.io 返回的格式: "62.9k", "13k", "12.9k" 等
-            // 直接返回 shields.io 的值，保持原有格式
-            return shieldsValue;
-        }
-
-        // 通过 shields.io API 获取 star 数
-        async function fetchStarCount(owner, repo) {
-            try {
-                const response = await fetch(`https://img.shields.io/github/stars/${owner}/${repo}.json`, {
-                    // 添加超时和缓存控制
-                    signal: AbortSignal.timeout(5000), // 5秒超时
-                    cache: 'default'
-                });
-
-                if (!response.ok) {
-                    console.warn(`GitHub API rate limit or error for ${owner}/${repo}`);
-                    return null;
-                }
-
-                const data = await response.json();
-
-                // 检查是否返回了错误信息
-                if (data.message && data.message.includes('Unable to select')) {
-                    console.warn(`GitHub token pool exhausted for ${owner}/${repo}`);
-                    return null;
-                }
-
-                // shields.io 返回格式化后的值，如 "62.9k" 或 "13k"
-                return normalizeStarCount(data.value || data.message);
-            } catch (error) {
-                // 静默处理错误，不在控制台显示（避免过多错误信息）
-                return null;
-            }
-        }
-
-        // 更新页面上的 star 数
-        function updateStarCount(owner, repo, starCount) {
-            // 找到对应的 GitHub 链接
-            const links = document.querySelectorAll('.github-link');
-            links.forEach(link => {
-                const href = link.getAttribute('href');
-                if (href && href.includes(`${owner}/${repo}`)) {
-                    const statNumber = link.querySelector('.stat-number');
-                    if (statNumber && starCount) {
-                        // 添加淡出效果
-                        statNumber.style.transition = 'opacity 0.3s ease';
-                        statNumber.style.opacity = '0';
-
-                        // 300ms 后更新数值并淡入
-                        setTimeout(() => {
-                            statNumber.textContent = starCount;
-                            statNumber.style.opacity = '1';
-                        }, 300);
-                    }
-                }
-            });
-        }
-
-        // 加载所有项目的 star 数
-        async function loadAllStars() {
-            for (const project of projects) {
-                const starCount = await fetchStarCount(project.owner, project.repo);
-                if (starCount) {
-                    updateStarCount(project.owner, project.repo, starCount);
-                }
-                // 添加小延迟避免请求过快
-                await new Promise(resolve => setTimeout(resolve, 100));
-            }
-        }
-
-        // 页面加载完成后执行
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', loadAllStars);
-        } else {
-            loadAllStars();
-        }
-    </script>
-
-    <!-- 导航栏高亮脚本 -->
-    <script>
-        // 导航栏激活状态管理
-        function updateActiveNav() {
-            const sections = document.querySelectorAll('.content-section');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            let currentSection = '';
-            const scrollPosition = window.scrollY + 100; // 偏移量，提前触发
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${currentSection}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-
-        // 监听滚动事件
-        window.addEventListener('scroll', updateActiveNav);
-
-        // 页面加载时执行一次
-        window.addEventListener('load', updateActiveNav);
-    </script>
-
-    <!-- 发布折叠功能脚本 -->
-    <script>
-        // 初始化折叠功能
-        function initCollapsibles() {
-            const collapsibleTitles = document.querySelectorAll('.collapsible-title');
-
-            collapsibleTitles.forEach(title => {
-                // 支持点击和键盘操作
-                title.addEventListener('click', toggleCollapsible);
-                title.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        toggleCollapsible.call(this);
-                    }
-                });
-            });
-        }
-
-        function toggleCollapsible() {
-            // 获取目标列表的ID
-            const targetId = this.getAttribute('data-target');
-            const targetList = document.getElementById(targetId);
-
-            if (!targetList) return;
-
-            // 切换折叠状态
-            const isCollapsed = this.classList.toggle('collapsed');
-            targetList.classList.toggle('collapsed');
-
-            // 更新 ARIA 属性
-            this.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
-        }
-
-        // 页面加载完成后初始化
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initCollapsibles);
-        } else {
-            initCollapsibles();
-        }
-    </script>
-
-    <!-- 主题切换功能脚本 -->
-    <script>
-        // 主题切换功能
-        (function() {
-            const themeToggle = document.getElementById('themeToggle');
-            const sunIcon = document.getElementById('sunIcon');
-            const moonIcon = document.getElementById('moonIcon');
-            const html = document.documentElement;
-
-            // 从 localStorage 获取保存的主题，默认为暗黑主题
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-
-            // 应用主题
-            function applyTheme(theme) {
-                if (theme === 'light') {
-                    html.setAttribute('data-theme', 'light');
-                    sunIcon.style.display = 'none';
-                    moonIcon.style.display = 'block';
-                } else {
-                    html.removeAttribute('data-theme');
-                    sunIcon.style.display = 'block';
-                    moonIcon.style.display = 'none';
-                }
-                localStorage.setItem('theme', theme);
-            }
-
-            // 初始化主题
-            applyTheme(savedTheme);
-
-            // 切换主题
-            themeToggle.addEventListener('click', function() {
-                const currentTheme = html.getAttribute('data-theme');
-                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-                // 添加旋转动画
-                themeToggle.classList.add('rotating');
-
-                // 切换主题
-                applyTheme(newTheme);
-
-                // 移除动画类
-                setTimeout(() => {
-                    themeToggle.classList.remove('rotating');
-                }, 500);
-            });
-
-            // 键盘支持
-            themeToggle.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.click();
-                }
-            });
-        })();
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

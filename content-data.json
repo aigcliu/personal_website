@@ -1,0 +1,448 @@
+{
+  "news": [
+    {
+      "date": "Jan 2026",
+      "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2601.21957\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL-1.5</a>: A 0.9B lightweight VLM delivering SOTA document parsing and text spotting, leading across six scenarios. It adds new text spotting and seal recognition, supports 111 languages."
+    },
+    {
+      "date": "Jan 2026",
+      "textHtml": "We released <a href=\"https://github.com/PaddlePaddle/PaddleFormers\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleFormers 1.0</a>: It supports training for LLMs and VLMs, with extreme performance optimizations for key models like DeepSeek-V3 and GLM-4.5-Air, significantly outperforming Megatron-LM in training speed."
+    },
+    {
+      "date": "Dec 2025",
+      "textHtml": "We officially launched <a href=\"https://www.paddleocr.com\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR.com</a>, offering free hands-on experience with advanced document parsing capabilities."
+    },
+    {
+      "date": "Nov 2025",
+      "textHtml": "We open-sourced <a href=\"https://huggingface.co/baidu/ERNIE-4.5-VL-28B-A3B-Thinking\" target=\"_blank\" rel=\"noopener noreferrer\">ERNIE-4.5-VL-28B-A3B-Thinking</a>: a lightweight VLM (3B active) matching flagship models, excelling in visual reasoning, STEM solving, visual grounding, and video understanding with tool utilization."
+    },
+    {
+      "date": "Oct 2025",
+      "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2510.14528\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL</a>: a SOTA 0.9B VLM for document parsing, supporting 109 languages and recognizing complex elements (text, tables, formulas, charts)."
+    },
+    {
+      "date": "Sep 2025",
+      "textHtml": "We open-sourced <a href=\"https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Thinking\" target=\"_blank\" rel=\"noopener noreferrer\">ERNIE-4.5-21B-A3B-Thinking</a>: an enhanced reasoning model with improved performance on logical reasoning, mathematics, science, coding, featuring tool usage and 128K long-context."
+    },
+    {
+      "date": "Aug 2025",
+      "textHtml": "I gave a talk at IJCAI Conference on \"PaddlePaddle Deep Learning Framework and its Support for Large Model Training and Inference\"."
+    },
+    {
+      "date": "Jun 2025",
+      "textHtml": "We open-sourced <a href=\"https://yiyan.baidu.com/blog/publication/ERNIE_Technical_Report.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">ERNIE 4.5</a>: a family of large-scale multimodal models with 10 variants, including MoE models (47B/3B active, 424B total) and dense models (0.3B)."
+    },
+    {
+      "date": "May 2025",
+      "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2507.05595\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR 3.0</a>: featuring PP-OCRv5 (high-accuracy text recognition), PP-StructureV3 (general-purpose document parsing), and PP-ChatOCRv4 (intelligent document understanding)."
+    }
+  ],
+  "projects": [
+    {
+      "name": "PaddleOCR",
+      "status": "Active",
+      "statusClass": "status-active",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleOCR",
+      "stars": "62.9k",
+      "description": "A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages with ultra-lightweight system, powering popular projects like Umi-OCR, OmniParser, MinerU, and RAGFlow."
+    },
+    {
+      "name": "PaddleFormers",
+      "status": "Active",
+      "statusClass": "status-active",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleFormers",
+      "stars": "12.9k",
+      "description": "An easy-to-use library of pre-trained large language models based on PaddlePaddle. Implements 4D parallel strategies through unified Trainer API, supporting SFT/DPO paradigms and integrating PEFT, MergeKit, and Quantization APIs for efficient LLM development."
+    },
+    {
+      "name": "ERNIE",
+      "status": "Active",
+      "statusClass": "status-active",
+      "owner": "PaddlePaddle",
+      "repo": "ERNIE",
+      "stars": "7.5k",
+      "description": "Official repository for ERNIE 4.5, featuring both MoE and Dense models across LLMs and multimodal architectures. Provides end-to-end development pipeline for training, compression, and inference, supporting full-cycle industrial deployment."
+    },
+    {
+      "name": "PaddleX",
+      "status": "Active",
+      "statusClass": "status-active",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleX",
+      "stars": "5.9k",
+      "description": "All-in-One low-code development tool for AI models built on PaddlePaddle. Integrates over 200 ready-to-use pre-trained models covering OCR, object detection, and time series forecasting, supporting complete workflow from training to deployment."
+    },
+    {
+      "name": "PaddleDetection",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleDetection",
+      "stars": "13.1k",
+      "description": "End-to-end object detection toolkit providing 30+ algorithms and 250+ pre-trained models. Supports object detection, instance segmentation, keypoint detection, and multiple object tracking with complete pipeline from development to deployment."
+    },
+    {
+      "name": "PaddleNLP",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleNLP",
+      "stars": "12.3k",
+      "description": "Easy-to-use NLP library with 45+ architectures and 500+ pretrained models. Supports wide-range of tasks from research to industrial applications including Neural Search, Question Answering, Information Extraction, and Sentiment Analysis."
+    },
+    {
+      "name": "PaddleSeg",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleSeg",
+      "stars": "9.2k",
+      "description": "Easy-to-use image segmentation library providing 45+ models and 150+ pre-trained models. Supports Semantic Segmentation, Interactive Segmentation, Panoptic Segmentation, Image Matting, and 3D Segmentation with complete flow from labeling to deployment."
+    },
+    {
+      "name": "PaddleClas",
+      "owner": "PaddlePaddle",
+      "repo": "PaddleClas",
+      "stars": "5.8k",
+      "description": "Comprehensive toolkit for image classification and recognition. Encompasses advanced algorithms including PP-HGNet, PP-LCNetv2, and PP-LCNet, providing 35 series with 164 ImageNet pre-trained models for industrial and academic applications."
+    }
+  ],
+  "publications": [
+    {
+      "id": "arxiv-papers",
+      "name": "arXiv Papers",
+      "items": [
+        {
+          "number": "[A19]",
+          "url": "https://arxiv.org/abs/2601.21957",
+          "title": "PaddleOCR-VL-1.5: Towards a Multi-Task 0.9B VLM for Robust In-the-Wild Document Parsing",
+          "venue": "2026",
+          "authorsHtml": "Cheng Cui, Ting Sun, Suyin Liang, Tingquan Gao, Zelun Zhang, Jiaxuan Liu, Xueqing Wang, Changda Zhou, Hongen Liu, Manhui Lin, Yue Zhang, Yubo Zhang, <strong>Yi Liu</strong>, Dianhai Yu, Yanjun Ma"
+        },
+        {
+          "number": "[A18]",
+          "url": "https://arxiv.org/abs/2510.14528",
+          "title": "PaddleOCR-VL: Boosting Multilingual Document Parsing via a 0.9B Ultra-Compact Vision-Language Model",
+          "venue": "2025",
+          "authorsHtml": "Cheng Cui, Ting Sun, Suyin Liang, Tingquan Gao, Zelun Zhang, Jiaxuan Liu, Xueqing Wang, Changda Zhou, Hongen Liu, Manhui Lin, Yue Zhang, Yubo Zhang, Handong Zheng, Jing Zhang, Jun Zhang, <strong>Yi Liu</strong>, Dianhai Yu, Yanjun Ma"
+        },
+        {
+          "number": "[A17]",
+          "url": "https://arxiv.org/abs/2507.05595",
+          "title": "PaddleOCR 3.0 Technical Report",
+          "venue": "2025",
+          "authorsHtml": "Cheng Cui, Ting Sun, Manhui Lin, Tingquan Gao, Yubo Zhang, Jiaxuan Liu, Xueqing Wang, Zelun Zhang, Changda Zhou, Hongen Liu, Yue Zhang, Wenyu Lv, Kui Huang, Yichao Zhang, Jing Zhang, Jun Zhang, <strong>Yi Liu</strong>, Dianhai Yu, Yanjun Ma"
+        },
+        {
+          "number": "[A16]",
+          "url": "https://arxiv.org/abs/2503.16983",
+          "title": "Enabling Versatile Controls for Video Diffusion Models",
+          "venue": "2025",
+          "authorsHtml": "Xu Zhang, Hao Zhou, Haoming Qin, Xiaobin Lu, Jiaxing Yan, Guanzhong Wang, Zeyu Chen, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A15]",
+          "url": "https://arxiv.org/abs/2506.18023",
+          "title": "PP-DocBee2: Improved Baselines with Efficient Data for Multimodal Document Understanding",
+          "venue": "2025",
+          "authorsHtml": "Kui Huang, Xinrong Chen, Wenyu Lv, Jincheng Liao, Guanzhong Wang, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A14]",
+          "url": "https://arxiv.org/abs/2503.04065",
+          "title": "PP-DocBee: Improving Multimodal Document Understanding Through a Bag of Tricks",
+          "venue": "2025",
+          "authorsHtml": "Feng Ni, Kui Huang, Yao Lu, Wenyu Lv, Guanzhong Wang, Zeyu Chen, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A13]",
+          "url": "https://arxiv.org/abs/2503.18382",
+          "title": "PP-FormulaNet: Bridging Accuracy and Efficiency in Advanced Formula Recognition",
+          "venue": "2025",
+          "authorsHtml": "Hongen Liu, Cheng Cui, Yuning Du, <strong>Yi Liu</strong>, Gang Pan"
+        },
+        {
+          "number": "[A12]",
+          "url": "https://arxiv.org/abs/2503.17213",
+          "title": "PP-DocLayout: A Unified Document Layout Detection Model to Accelerate Large-Scale Data Construction",
+          "venue": "2025",
+          "authorsHtml": "Ting Sun, Cheng Cui, Yuning Du, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A11]",
+          "url": "https://arxiv.org/abs/2405.19194",
+          "title": "LOGO: Video Text Spotting with Language Collaboration and Glyph Perception Model",
+          "venue": "2024",
+          "authorsHtml": "Hongen Liu, Di Sun, Jiahao Wang, <strong>Yi Liu</strong>, Gang Pan"
+        },
+        {
+          "number": "[A10]",
+          "url": "https://arxiv.org/abs/2407.17140",
+          "title": "RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time Detection Transformer",
+          "venue": "2024",
+          "authorsHtml": "Wenyu Lv, Yian Zhao, Qinyao Chang, Kui Huang, Guanzhong Wang, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A9]",
+          "url": "https://arxiv.org/abs/2304.08069",
+          "title": "DETRs Beat YOLOs on Real-time Object Detection",
+          "venue": "2023",
+          "authorsHtml": "Wenyu Lv, Shangliang Xu, Yian Zhao, Guanzhong Wang, Jinman Wei, Cheng Cui, Yuning Du, Qingqing Dang, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A8]",
+          "url": "https://arxiv.org/abs/2304.05152",
+          "title": "PP-MobileSeg: Explore the Fast and Accurate Semantic Segmentation Model on Mobile Devices",
+          "venue": "2023",
+          "authorsHtml": "Shiyu Tang, Ting Sun, Juncai Peng, Guowei Chen, Yuying Hao, Manhui Lin, Zhihong Xiao, Jiangbin You, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[A7]",
+          "url": "https://arxiv.org/abs/2211.02386",
+          "title": "PP-YOLOE-R: An Efficient Anchor-Free Rotated Object Detector",
+          "venue": "2022",
+          "authorsHtml": "Xinxin Wang, Guanzhong Wang, Qingqing Dang, <strong>Yi Liu</strong>, Xiaoguang Hu, Dianhai Yu"
+        },
+        {
+          "number": "[A6]",
+          "url": "https://arxiv.org/abs/2210.10984",
+          "title": "RAIS: Robust and Accurate Interactive Segmentation via Continual Learning",
+          "venue": "2022",
+          "authorsHtml": "Yuying Hao, <strong>Yi Liu</strong>, Juncai Peng, Haoyi Xiong, Guowei Chen, Shiyu Tang, Zeyu Chen, Baohua Lai"
+        },
+        {
+          "number": "[A5]",
+          "url": "https://arxiv.org/abs/2210.05391",
+          "title": "PP-StructureV2: A Stronger Document Analysis System",
+          "venue": "2022",
+          "authorsHtml": "Chenxia Li, Ruoyu Guo, Jun Zhou, Mengtao An, Yuning Du, Lingfeng Zhu, <strong>Yi Liu</strong>, Xiaoguang Hu, Dianhai Yu"
+        },
+        {
+          "number": "[A4]",
+          "url": "https://arxiv.org/abs/2210.08788",
+          "title": "EISeg: An Efficient Interactive Segmentation Tool based on PaddlePaddle",
+          "venue": "2022",
+          "authorsHtml": "Yuying Hao, <strong>Yi Liu</strong>, Yizhou Chen, Lin Han, Juncai Peng, Shiyu Tang, Guowei Chen, Zewu Wu, Zeyu Chen, Baohua Lai"
+        },
+        {
+          "number": "[A3]",
+          "url": "https://arxiv.org/abs/2204.09433",
+          "title": "PP-Matting: High-Accuracy Natural Image Matting",
+          "venue": "2022",
+          "authorsHtml": "Guowei Chen, <strong>Yi Liu</strong>, Jian Wang, Juncai Peng, Yuying Hao, Lutao Chu, Shiyu Tang, Zewu Wu, Zeyu Chen, Zhiliang Yu, Yuning Du, Qingqing Dang, Xiaoguang Hu, Dianhai Yu"
+        },
+        {
+          "number": "[A2]",
+          "url": "https://arxiv.org/abs/2204.02681",
+          "title": "PP-LiteSeg: A Superior Real-Time Semantic Segmentation Model",
+          "venue": "2022",
+          "authorsHtml": "Juncai Peng, <strong>Yi Liu</strong>, Shiyu Tang, Yuying Hao, Lutao Chu, Guowei Chen, Zewu Wu, Zeyu Chen, Zhiliang Yu, Yuning Du, Qingqing Dang, Baohua Lai, Qiwen Liu, Xiaoguang Hu, Dianhai Yu, Yanjun Ma"
+        },
+        {
+          "number": "[A1]",
+          "url": "https://arxiv.org/abs/2101.06175",
+          "title": "PaddleSeg: A High-Efficient Development Toolkit for Image Segmentation",
+          "venue": "2021",
+          "authorsHtml": "<strong>Yi Liu</strong>, Lutao Chu, Guowei Chen, Zewu Wu, Zeyu Chen, Baohua Lai, Yuying Hao"
+        }
+      ]
+    },
+    {
+      "id": "conference-papers",
+      "name": "Conference Papers",
+      "items": [
+        {
+          "number": "[C20]",
+          "url": "https://arxiv.org/abs/2508.00412",
+          "title": "Sortblock: Similarity-Aware Feature Reuse for Diffusion Model",
+          "venue": "AAAI 2026",
+          "authorsHtml": "Hanqi Chen, Xu Zhang, Xiaoliu Guan, Lielin Jiang, Guanzhong Wang, Zeyu Chen, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[C19]",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32223",
+          "title": "SUTrack: Towards Simple and Unified Single Object Tracking",
+          "venue": "AAAI 2025",
+          "authorsHtml": "Xin Chen, Ben Kang, Wanting Geng, Jiawen Zhu, <strong>Yi Liu</strong>, Dong Wang, Huchuan Lu"
+        },
+        {
+          "number": "[C18]",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32440",
+          "title": "Exploring Enhanced Contextual Information for Video-Level Object Tracking",
+          "venue": "AAAI 2025",
+          "authorsHtml": "Ben Kang, Xin Chen, Simiao Lai, Yang Liu, <strong>Yi Liu</strong>, Dong Wang"
+        },
+        {
+          "number": "[C17]",
+          "url": "https://arxiv.org/abs/2309.13604",
+          "title": "Distribution-Aware Continual Test-Time Adaptation for Semantic Segmentation",
+          "venue": "ICRA 2024",
+          "authorsHtml": "Jiayi Ni, Senqiao Yang, Ran Xu, Jiaming Liu, Xiaoqi Li, Wenyu Jiao, Zehui Chen, <strong>Yi Liu</strong>, Shanghang Zhang"
+        },
+        {
+          "number": "[C16]",
+          "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_DETRs_Beat_YOLOs_on_Real-time_Object_Detection_CVPR_2024_paper.html",
+          "title": "DETRs Beat YOLOs on Real-time Object Detection",
+          "venue": "CVPR 2024",
+          "authorsHtml": "Yian Zhao, Wenyu Lv, Shangliang Xu, Jinman Wei, Guanzhong Wang, Qingqing Dang, <strong>Yi Liu</strong>, Jie Chen"
+        },
+        {
+          "number": "[C15]",
+          "url": "https://ieeexplore.ieee.org/document/10230371/",
+          "title": "Video4MRI: An Empirical Study on Brain Magnetic Resonance Image Analytics with CNN-Based Video Classification Frameworks",
+          "venue": "ISBI 2023",
+          "authorsHtml": "Yuxuan Zhang, Qingzhong Wang, Jiang Bian, <strong>Yi Liu</strong>, Yanwu Xu, Dejing Dou, Haoyi Xiong"
+        },
+        {
+          "number": "[C14]",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-031-48593-0_11",
+          "title": "Context Matters: Cross-Domain Cell Detection in Histopathology Images via Contextual Regularization",
+          "venue": "MIUA 2023",
+          "authorsHtml": "Ziqi Wen, Qingzhong Wang, Jiang Bian, Xuhong Li, <strong>Yi Liu</strong>, Haoyi Xiong"
+        },
+        {
+          "number": "[C13]",
+          "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Lightweight_Image_Super-Resolution_with_Superpixel_Token_Interaction_ICCV_2023_paper.html",
+          "title": "Lightweight Image Super-Resolution with Superpixel Token Interaction",
+          "venue": "ICCV 2023",
+          "authorsHtml": "Aiping Zhang, Wenqi Ren, <strong>Yi Liu</strong>, Xiaochun Cao"
+        },
+        {
+          "number": "[C12]",
+          "url": "https://ieeexplore.ieee.org/document/9812325/",
+          "title": "Towards Efficient 3D Human Motion Prediction using Deformable Transformer-based Adversarial Network",
+          "venue": "ICRA 2022",
+          "authorsHtml": "Hua Yu, Xuanzhe Fan, Yaqing Hou, <strong>Yi Liu</strong>, Cai Kang, Dongsheng Zhou, Qiang Zhang"
+        },
+        {
+          "number": "[C11]",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-031-16452-1_15",
+          "title": "MUSCLE: Multi-task Self-supervised Continual Learning to Pre-train Deep Models for X-Ray Images of Multiple Body Parts",
+          "venue": "MICCAI 2022",
+          "authorsHtml": "Weibin Liao, Haoyi Xiong, Qingzhong Wang, Yan Mo, Xuhong Li, <strong>Yi Liu</strong>, Zeyu Chen, Siyu Huang, Dejing Dou"
+        },
+        {
+          "number": "[C10]",
+          "url": "https://openaccess.thecvf.com/content/WACV2022W/HADCV/html/Chu_PP-HumanSeg_Connectivity-Aware_Portrait_Segmentation_With_a_Large-Scale_Teleconferencing_Video_Dataset_WACVW_2022_paper.html",
+          "title": "PP-HumanSeg: Connectivity-Aware Portrait Segmentation With a Large-Scale Teleconferencing Video Dataset",
+          "venue": "WACV 2022",
+          "authorsHtml": "Lutao Chu, <strong>Yi Liu</strong>, Zewu Wu, Shiyu Tang, Guowei Chen, Yuying Hao, Juncai Peng, Zhiliang Yu, Zeyu Chen, Baohua Lai, Haoyi Xiong"
+        },
+        {
+          "number": "[C9]",
+          "url": "https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/html/Hao_EdgeFlow_Achieving_Practical_Interactive_Segmentation_With_Edge-Guided_Flow_ICCVW_2021_paper.html",
+          "title": "EdgeFlow: Achieving Practical Interactive Segmentation with Edge-Guided Flow",
+          "venue": "ICCV 2021",
+          "authorsHtml": "Yuying Hao, <strong>Yi Liu</strong>, Zewu Wu, Lin Han, Yizhou Chen, Guowei Chen, Lutao Chu, Shiyu Tang, Zhiliang Yu, Zeyu Chen, Baohua Lai"
+        },
+        {
+          "number": "[C8]",
+          "url": "https://ieeexplore.ieee.org/document/7986840/",
+          "title": "A New Reconstruction Method in Gaze Estimation with Natural Head Movement",
+          "venue": "MVA 2017",
+          "authorsHtml": "<strong>Yi Liu</strong>, Bu-Sung Lee, Andrzej Sluzek, Deepu Rajan, Martin J. McKeown"
+        },
+        {
+          "number": "[C7]",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-319-48881-3_18",
+          "title": "Feasibility Analysis of Eye Typing with a Standard Webcam",
+          "venue": "ECCV Workshop 2016",
+          "authorsHtml": "<strong>Yi Liu</strong>, Bu-Sung Lee, Andrzej Sluzek, Deepu Rajan, Martin J. McKeown"
+        },
+        {
+          "number": "[C6]",
+          "url": "https://dl.acm.org/doi/10.1145/2838739.2838813",
+          "title": "GazeTry: Swipe Text Typing Using Gaze",
+          "venue": "OzCHI 2015",
+          "authorsHtml": "<strong>Yi Liu</strong>, Chi Zhang, Chonho Lee, Bu-Sung Lee, Alex Q. Chen"
+        },
+        {
+          "number": "[C5]",
+          "url": "https://ieeexplore.ieee.org/document/7423794/",
+          "title": "A Robust Recognition Approach in Eye-Based Dwell-Free Typing",
+          "venue": "IEEE PIC 2015",
+          "authorsHtml": "<strong>Yi Liu</strong>, Bu-Sung Lee, Martin J. McKeown, Chonho Lee"
+        },
+        {
+          "number": "[C4]",
+          "url": "https://ieeexplore.ieee.org/document/7362195/",
+          "title": "Feasibility Analysis and Adaptive Thresholding for Mobile Applications Controlled by EEG Signals",
+          "venue": "EUSIPCO 2015",
+          "authorsHtml": "Chonho Lee, Jiawei Chin, <strong>Yi Liu</strong>, Bu-Sung Lee, Martin J. McKeown"
+        },
+        {
+          "number": "[C3]",
+          "url": "https://ieeexplore.ieee.org/document/6918537/",
+          "title": "A Wavelet Entropy-Based Change Point Detection on Network Traffic: A Case Study of Heartbleed Vulnerability",
+          "venue": "IEEE CCTA 2014",
+          "authorsHtml": "Chonho Lee, <strong>Yi Liu</strong>, Lim Hui Tan, Wei Goh, Bu-Sung Lee, Chai Kiat Yeo"
+        },
+        {
+          "number": "[C2]",
+          "url": "https://ieeexplore.ieee.org/document/6864446/",
+          "title": "A Motion Accuracy Evaluator Based on Body Parts Movement by MapReduce Video Processing",
+          "venue": "IEEE BHI 2014",
+          "authorsHtml": "Chonho Lee, Yoshihiro Terada, <strong>Yi Liu</strong>, Bu-Sung Lee"
+        },
+        {
+          "number": "[C1]",
+          "url": "https://ieeexplore.ieee.org/document/7001885/",
+          "title": "Analysis of Visually Guided Tracking Performance in Parkinson's Disease",
+          "venue": "IEEE e-Health 2014",
+          "authorsHtml": "<strong>Yi Liu</strong>, Chonho Lee, Bu-Sung Lee, John Keith Robert Stevenson, Martin J. McKeown"
+        }
+      ]
+    },
+    {
+      "id": "journal-papers",
+      "name": "Journal Papers",
+      "items": [
+        {
+          "number": "[J7]",
+          "url": "https://ieeexplore.ieee.org/document/10742428/",
+          "title": "DSDC-GCN: Decoupled Static-Dynamic Co-Occurrence Graph Convolutional Networks for Skeleton-Based Action Recognition",
+          "venue": "IEEE Transactions on Circuits and Systems for Video Technology 2025",
+          "authorsHtml": "Tianming Zhuang, Zhen Qin, Yi Ding, Zhiguang Qin, Ji Geng, <strong>Yi Liu</strong>, Kim-Kwang Raymond Choo"
+        },
+        {
+          "number": "[J6]",
+          "url": "https://ieeexplore.ieee.org/document/11021303/",
+          "title": "EGAvatar: Efficient GAN Inversion for Generalizable Head Avatar From Few-Shot Images",
+          "venue": "IEEE Transactions on Visualization and Computer Graphics 2025",
+          "authorsHtml": "Hao-Pan Ren, Wei Duan, Wan-Yu Li, <strong>Yi Liu</strong>, Yu-Dong Guo, Shi-Sheng Huang, Ju-Yong Zhang, Hua Huang"
+        },
+        {
+          "number": "[J5]",
+          "url": "https://arxiv.org/abs/2508.02240",
+          "title": "Forecasting When to Forecast: Accelerating Diffusion Models with Confidence-Gated Taylor",
+          "venue": "Knowledge-Based Systems 2025",
+          "authorsHtml": "Xiaoliu Guan, Lielin Jiang, Hanqi Chen, Xu Zhang, Jiaxing Yan, Guanzhong Wang, <strong>Yi Liu</strong>, Zetao Zhang, Yu Wu"
+        },
+        {
+          "number": "[J4]",
+          "url": "https://ieeexplore.ieee.org/document/10531186/",
+          "title": "MTPret: Improving X-Ray Image Analytics With Multitask Pretraining",
+          "venue": "IEEE Transactions on Artificial Intelligence 2024",
+          "authorsHtml": "Weibin Liao, Haoyi Xiong, Qingzhong Wang, <strong>Yi Liu</strong>, Zeyu Chen, Qinghua Zheng, Dejing Dou"
+        },
+        {
+          "number": "[J3]",
+          "url": "https://arxiv.org/abs/2207.03335",
+          "title": "Distilling Ensemble of Explanations for Weakly-Supervised Pre-Training of Image Segmentation Models",
+          "venue": "Machine Learning 2023",
+          "authorsHtml": "Xuhong Li, Haoyi Xiong, <strong>Yi Liu</strong>, Dingfu Zhou, Zeyu Chen, Yaqing Wang, Dejing Dou"
+        },
+        {
+          "number": "[J2]",
+          "url": "https://link.springer.com/article/10.1007/s00138-018-0988-4",
+          "title": "CamType: Assistive Text Entry Using Gaze with an Off-the-Shelf Webcam",
+          "venue": "Machine Vision and Applications 2019",
+          "authorsHtml": "<strong>Yi Liu</strong>, Bu-Sung Lee, Deepu Rajan, Andrzej Sluzek, Martin J. McKeown"
+        },
+        {
+          "number": "[J1]",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/10447318.2016.1151808",
+          "title": "Robust Eye-Based Dwell-Free Typing",
+          "venue": "International Journal of Human–Computer Interaction 2016",
+          "authorsHtml": "<strong>Yi Liu</strong>, Bu-Sung Lee, Martin J. McKeown"
+        }
+      ]
+    }
+  ]
+}

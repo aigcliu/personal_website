@@ -96,14 +96,54 @@ async function refreshProjectStars(projects) {
 }
 
 function renderNewsItems(news) {
-    return news
-        .map(
-            item => `                        <li class="news-item">
+    // Split news into recent (last 6 months) and older
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+    const recentNews = [];
+    const olderNews = [];
+
+    news.forEach(item => {
+        const match = item.date.match(/(\w+)\s+(\d{4})/);
+        if (match) {
+            const [, month, year] = match;
+            const monthMap = {
+                'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5,
+                'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
+            };
+            const itemDate = new Date(parseInt(year), monthMap[month] || 0, 1);
+
+            if (itemDate >= sixMonthsAgo) {
+                recentNews.push(item);
+            } else {
+                olderNews.push(item);
+            }
+        } else {
+            recentNews.push(item); // Default to recent if date format is unknown
+        }
+    });
+
+    const renderItem = item => `                        <li class="news-item">
                             <span class="news-date">${item.date || ''}</span>
                             <span class="news-text">${item.textHtml || ''}</span>
-                        </li>`
-        )
-        .join('\n');
+                        </li>`;
+
+    let html = recentNews.map(renderItem).join('\n');
+
+    if (olderNews.length > 0) {
+        html += `
+                        <li class="news-more-container">
+                            <button class="news-more-btn" id="newsMoreBtn" aria-expanded="false">
+                                <span class="btn-text">Show ${olderNews.length} more news</span>
+                                <span class="btn-icon">▼</span>
+                            </button>
+                            <ul class="news-more-list collapsed" id="newsMoreList">
+${olderNews.map(renderItem).join('\n')}
+                            </ul>
+                        </li>`;
+    }
+
+    return html;
 }
 
 function renderProjectCards(projects) {

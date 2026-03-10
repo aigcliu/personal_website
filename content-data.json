@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "date": "Mar 2026",
+      "textHtml": "Our two works, <a href=\"https://arxiv.org/abs/2507.05595\" target=\"_blank\" rel=\"noopener noreferrer\">PP-OCRv5</a> and <a href=\"https://arxiv.org/abs/2510.14528\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL</a>, have been accepted by CVPR 2026!"
+    },
+    {
+      "date": "Feb 2026",
+      "textHtml": "<a href=\"https://arxiv.org/abs/2602.04705\" target=\"_blank\" rel=\"noopener noreferrer\">ERNIE 5.0</a> (2.4T-parameter unified multimodal model) released. My team developed its ultra-scale RL infrastructure for stable and efficient post-training with MoE architectures."
+    },
+    {
       "date": "Jan 2026",
       "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2601.21957\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL-1.5</a>: A 0.9B lightweight VLM delivering SOTA document parsing and text spotting, leading across six scenarios. It adds new text spotting and seal recognition, supports 111 languages."
     },

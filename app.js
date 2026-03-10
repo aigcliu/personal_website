@@ -214,6 +214,29 @@ function toggleCollapsible(title) {
     title.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
 }
 
+function initNewsMore() {
+    const moreBtn = document.getElementById('newsMoreBtn');
+    const moreList = document.getElementById('newsMoreList');
+    if (!moreBtn || !moreList) return;
+
+    moreBtn.addEventListener('click', () => {
+        const isExpanded = moreBtn.getAttribute('aria-expanded') === 'true';
+        moreBtn.setAttribute('aria-expanded', (!isExpanded).toString());
+        moreList.classList.toggle('collapsed');
+
+        const btnText = moreBtn.querySelector('.btn-text');
+        if (btnText) {
+            btnText.textContent = isExpanded ? 'Show more news' : 'Show less';
+        }
+    });
+
+    moreBtn.addEventListener('keydown', e => {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault();
+        moreBtn.click();
+    });
+}
+
 function initCollapsibles() {
     const collapsibleTitles = document.querySelectorAll('.collapsible-title');
     collapsibleTitles.forEach(title => {
@@ -279,6 +302,7 @@ function init() {
     void loadAllStars();
     initProjectCardHoverGlow();
     updateActiveNav();
+    initNewsMore();
     initCollapsibles();
     initThemeToggle();
     window.addEventListener('scroll', updateActiveNav);

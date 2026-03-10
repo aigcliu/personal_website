@@ -134,7 +134,7 @@ function renderNewsItems(news) {
         html += `
                         <li class="news-more-container">
                             <button class="news-more-btn" id="newsMoreBtn" aria-expanded="false">
-                                <span class="btn-text">Show ${olderNews.length} more news</span>
+                                <span class="btn-text">Show more news</span>
                                 <span class="btn-icon">▼</span>
                             </button>
                             <ul class="news-more-list collapsed" id="newsMoreList">

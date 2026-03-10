@@ -226,7 +226,7 @@ function initNewsMore() {
 
         const btnText = moreBtn.querySelector('.btn-text');
         if (btnText) {
-            btnText.textContent = isExpanded ? 'Show more news' : 'Show less';
+            btnText.textContent = isExpanded ? 'Show 4 more news' : 'Show less';
         }
     });
 

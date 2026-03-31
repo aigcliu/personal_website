@@ -2,7 +2,7 @@
   "news": [
     {
       "date": "Mar 2026",
-      "textHtml": "Our two works, <a href=\"https://arxiv.org/abs/2507.05595\" target=\"_blank\" rel=\"noopener noreferrer\">PP-OCRv5</a> and <a href=\"https://arxiv.org/abs/2510.14528\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL</a>, have been accepted by CVPR 2026!"
+      "textHtml": "Our two works, <a href=\"https://arxiv.org/pdf/2603.24373v1\" target=\"_blank\" rel=\"noopener noreferrer\">PP-OCRv5</a> and <a href=\"https://arxiv.org/pdf/2603.24326\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL</a>, have been accepted by CVPR 2026!"
     },
     {
       "date": "Feb 2026",

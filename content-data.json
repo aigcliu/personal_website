@@ -256,6 +256,20 @@
       "name": "Conference Papers",
       "items": [
         {
+          "number": "[C22]",
+          "url": "https://arxiv.org/abs/2603.24326",
+          "title": "Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing",
+          "venue": "CVPR 2026",
+          "authorsHtml": "Cheng Cui, Ting Sun, Suyin Liang, Tingquan Gao, Zelun Zhang, Jiaxuan Liu, Xueqing Wang, Changda Zhou, Hongen Liu, Manhui Lin, Yue Zhang, Yubo Zhang, Jing Zhang, Jun Zhang, Xing Wei, <strong>Yi Liu</strong>, Dianhai Yu, Yanjun Ma"
+        },
+        {
+          "number": "[C21]",
+          "url": "https://arxiv.org/abs/2603.24373",
+          "title": "PP-OCRv5: A Specialized 5M-Parameter Model Rivaling Billion-Parameter Vision-Language Models on OCR Tasks",
+          "venue": "CVPR 2026",
+          "authorsHtml": "Cheng Cui, Yubo Zhang, Ting Sun, Xueqing Wang, Hongen Liu, Manhui Lin, Yue Zhang, Tingquan Gao, Changda Zhou, Jiaxuan Liu, Zelun Zhang, Jing Zhang, Jun Zhang, <strong>Yi Liu</strong>"
+        },
+        {
           "number": "[C20]",
           "url": "https://arxiv.org/abs/2508.00412",
           "title": "Sortblock: Similarity-Aware Feature Reuse for Diffusion Model",

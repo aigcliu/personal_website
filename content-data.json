@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "May 2026",
+      "textHtml": "I gave a talk at <a href=\"https://valser.org/2026/#/\" target=\"_blank\" rel=\"noopener noreferrer\">VALSE 2026</a> on \"PaddleOCR Multimodal Document Intelligent Parsing\"."
+    },
+    {
       "date": "Mar 2026",
       "textHtml": "Our two works, <a href=\"https://arxiv.org/pdf/2603.24373v1\" target=\"_blank\" rel=\"noopener noreferrer\">PP-OCRv5</a> and <a href=\"https://arxiv.org/pdf/2603.24326\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL</a>, have been accepted by CVPR 2026!"
     },

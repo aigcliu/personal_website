@@ -2,7 +2,15 @@
   "news": [
     {
       "date": "May 2026",
-      "textHtml": "I gave a talk at <a href=\"https://valser.org/2026/#/\" target=\"_blank\" rel=\"noopener noreferrer\">VALSE 2026</a> on \"PaddleOCR Multimodal Document Intelligent Parsing\"."
+      "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2606.03264\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL-1.6</a>, achieving SOTA on OmniDocBench v1.6 with over 96.3% accuracy, significantly improving table, ancient document, rare character, and seal recognition while maintaining full compatibility with v1.5."
+    },
+    {
+      "date": "May 2026",
+      "textHtml": "A collaboration with Renmin University of China on <a href=\"https://arxiv.org/abs/2506.07963\" target=\"_blank\" rel=\"noopener noreferrer\">SUDER</a> has been accepted by KDD 2026!"
+    },
+    {
+      "date": "May 2026",
+      "textHtml": "I gave a talk at <a href=\"https://valser.org/2026/#/\" target=\"_blank\" rel=\"noopener noreferrer\">VALSE 2026</a> and <a href=\"https://ccig.csig.org.cn/2026/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">CCIG 2026</a> on \"PaddleOCR Multimodal Document Intelligent Parsing\"."
     },
     {
       "date": "Mar 2026",
@@ -120,6 +128,13 @@
       "id": "arxiv-papers",
       "name": "arXiv Papers",
       "items": [
+        {
+          "number": "[A20]",
+          "url": "https://arxiv.org/abs/2606.03264",
+          "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
+          "venue": "2026",
+          "authorsHtml": "Zelun Zhang, Hongen Liu, Suyin Liang, Yubo Zhang, Yiqing Xiang, Jiaxuan Liu, Ting Sun, Manhui Lin, Yue Zhang, Changda Zhou, Tingquan Gao, Cheng Cui, <strong>Yi Liu</strong>, Dianhai Yu, Yanjun Ma"
+        },
         {
           "number": "[A19]",
           "url": "https://arxiv.org/abs/2601.21957",
@@ -259,6 +274,13 @@
       "id": "conference-papers",
       "name": "Conference Papers",
       "items": [
+        {
+          "number": "[C23]",
+          "url": "https://arxiv.org/abs/2506.07963",
+          "title": "SUDER: Self-Improving Unified Large Multimodal Models for Understanding and Generation with Dual Self-Rewards",
+          "venue": "KDD 2026",
+          "authorsHtml": "Jixiang Hong, Yiran Zhang, Guanzhong Wang, <strong>Yi Liu</strong>, Ji-Rong Wen, Rui Yan"
+        },
         {
           "number": "[C22]",
           "url": "https://arxiv.org/abs/2603.24326",

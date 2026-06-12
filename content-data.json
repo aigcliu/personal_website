@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "Jun 2026",
+      "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2606.13108\" target=\"_blank\" rel=\"noopener noreferrer\">PP-OCRv6</a>, a three-tier OCR model family (1.5M/7.7M/34.5M) that surpasses mainstream VLMs with major accuracy gains, unified support for 50 languages, and faster inference across CPU, Apple M4, and GPU deployments."
+    },
+    {
       "date": "May 2026",
       "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2606.03264\" target=\"_blank\" rel=\"noopener noreferrer\">PaddleOCR-VL-1.6</a>, achieving SOTA on OmniDocBench v1.6 with over 96.3% accuracy, significantly improving table, ancient document, rare character, and seal recognition while maintaining full compatibility with v1.5."
     },
@@ -128,6 +132,13 @@
       "id": "arxiv-papers",
       "name": "arXiv Papers",
       "items": [
+        {
+          "number": "[A21]",
+          "url": "https://arxiv.org/abs/2606.13108",
+          "title": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs on OCR Tasks",
+          "venue": "2026",
+          "authorsHtml": "Yubo Zhang, Xueqing Wang, Manhui Lin, Yue Zhang, Penglongyi Deng, Ting Sun, Tingquan Gao, Zelun Zhang, Jiaxuan Liu, Changda Zhou, Hongen Liu, Suyin Liang, Cheng Cui, <strong>Yi Liu</strong>, Dianhai Yu, Yanjun Ma"
+        },
         {
           "number": "[A20]",
           "url": "https://arxiv.org/abs/2606.03264",

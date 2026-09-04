@@ -1015,6 +1015,10 @@ a:hover {
     margin-top: 0.5rem;
 }
 
+.news-more-container[hidden] {
+    display: none;
+}
+
 .news-more-btn {
     display: flex;
     align-items: center;

@@ -214,6 +214,42 @@ function toggleCollapsible(title) {
     title.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
 }
 
+const NEWS_RECENT_MONTHS = 6;
+const NEWS_MIN_VISIBLE = 3;
+
+function getNewsAgeInMonths(item, now) {
+    const match = /^(\d{4})-(\d{2})$/.exec(item.getAttribute('data-news-date') || '');
+    if (!match) return null;
+    const year = Number(match[1]);
+    const month = Number(match[2]) - 1;
+    return (now.getFullYear() - year) * 12 + (now.getMonth() - month);
+}
+
+// index.html 的近半年划分固定在构建时刻，页面打开时按访问日期重新折叠已过期的动态
+function initNewsRecency() {
+    const newsList = document.querySelector('.news-list');
+    const moreContainer = newsList && newsList.querySelector('.news-more-container');
+    const moreList = document.getElementById('newsMoreList');
+    if (!newsList || !moreContainer || !moreList) return;
+
+    const now = new Date();
+    const visibleItems = Array.from(newsList.children).filter(child =>
+        child.classList.contains('news-item')
+    );
+
+    // 动态按时间倒序排列，前 NEWS_MIN_VISIBLE 条始终保留，避免 News 区域为空
+    const staleItems = visibleItems.filter((item, index) => {
+        if (index < NEWS_MIN_VISIBLE) return false;
+        const ageInMonths = getNewsAgeInMonths(item, now);
+        return ageInMonths !== null && ageInMonths > NEWS_RECENT_MONTHS;
+    });
+
+    if (staleItems.length > 0) {
+        moreList.prepend(...staleItems);
+    }
+    moreContainer.hidden = moreList.children.length === 0;
+}
+
 function initNewsMore() {
     const moreBtn = document.getElementById('newsMoreBtn');
     const moreList = document.getElementById('newsMoreList');
@@ -302,6 +338,7 @@ function init() {
     void loadAllStars();
     initProjectCardHoverGlow();
     updateActiveNav();
+    initNewsRecency();
     initNewsMore();
     initCollapsibles();
     initThemeToggle();

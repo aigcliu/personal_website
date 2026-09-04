@@ -9,6 +9,12 @@ const TEMPLATE_PATH = path.join(REPO_DIR, 'index.template.html');
 const DATA_PATH = path.join(REPO_DIR, 'content-data.json');
 const OUTPUT_PATH = path.join(REPO_DIR, 'index.html');
 const STAR_FETCH_TIMEOUT_MS = 5000;
+const NEWS_RECENT_MONTHS = 6;
+const NEWS_MIN_VISIBLE = 3;
+const MONTH_INDEX = {
+    Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+    Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11
+};
 
 const GITHUB_ICON_PATH =
     'M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z';
@@ -95,44 +101,52 @@ async function refreshProjectStars(projects) {
     return { refreshedProjects, refreshedCount };
 }
 
-function renderNewsItems(news) {
-    // Split news into recent (last 6 months) and older
-    const sixMonthsAgo = new Date();
-    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+function parseNewsMonth(dateText) {
+    const match = /([A-Za-z]{3})[a-z]*\s+(\d{4})/.exec(dateText || '');
+    if (!match) return null;
+    const month = MONTH_INDEX[match[1]];
+    if (month === undefined) return null;
+    return { year: Number(match[2]), month };
+}
 
+function newsAgeInMonths(newsMonth, now) {
+    return (now.getFullYear() - newsMonth.year) * 12 + (now.getMonth() - newsMonth.month);
+}
+
+function renderNewsItems(news) {
+    // 构建时先按当天划分近半年动态，其余折叠。app.js 会在页面打开时按访问日期重新划分，
+    // 避免静态页面长期不重新构建导致过期条目仍然展开显示。
+    const now = new Date();
     const recentNews = [];
     const olderNews = [];
 
     news.forEach(item => {
-        const match = item.date.match(/(\w+)\s+(\d{4})/);
-        if (match) {
-            const [, month, year] = match;
-            const monthMap = {
-                'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5,
-                'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
-            };
-            const itemDate = new Date(parseInt(year), monthMap[month] || 0, 1);
-
-            if (itemDate >= sixMonthsAgo) {
-                recentNews.push(item);
-            } else {
-                olderNews.push(item);
-            }
+        const newsMonth = parseNewsMonth(item.date);
+        if (newsMonth && newsAgeInMonths(newsMonth, now) > NEWS_RECENT_MONTHS) {
+            olderNews.push(item);
         } else {
-            recentNews.push(item); // Default to recent if date format is unknown
+            recentNews.push(item); // 日期格式未知时默认按最新处理
         }
     });
 
-    const renderItem = item => `                        <li class="news-item">
+    // 保证 News 区域不会因为长期没有更新而变成空列表
+    while (recentNews.length < NEWS_MIN_VISIBLE && olderNews.length > 0) {
+        recentNews.push(olderNews.shift());
+    }
+
+    const renderItem = item => {
+        const newsMonth = parseNewsMonth(item.date);
+        const dateAttr = newsMonth
+            ? ` data-news-date="${newsMonth.year}-${String(newsMonth.month + 1).padStart(2, '0')}"`
+            : '';
+        return `                        <li class="news-item"${dateAttr}>
                             <span class="news-date">${item.date || ''}</span>
                             <span class="news-text">${item.textHtml || ''}</span>
                         </li>`;
+    };
 
-    let html = recentNews.map(renderItem).join('\n');
-
-    if (olderNews.length > 0) {
-        html += `
-                        <li class="news-more-container">
+    return `${recentNews.map(renderItem).join('\n')}
+                        <li class="news-more-container"${olderNews.length > 0 ? '' : ' hidden'}>
                             <button class="news-more-btn" id="newsMoreBtn" aria-expanded="false">
                                 <span class="btn-text">Show more news</span>
                                 <span class="btn-icon">▼</span>
@@ -141,9 +155,6 @@ function renderNewsItems(news) {
 ${olderNews.map(renderItem).join('\n')}
                             </ul>
                         </li>`;
-    }
-
-    return html;
 }
 
 function renderProjectCards(projects) {

@@ -64,8 +64,6 @@
   "projects": [
     {
       "name": "PaddleOCR",
-      "status": "Active",
-      "statusClass": "status-active",
       "owner": "PaddlePaddle",
       "repo": "PaddleOCR",
       "stars": "62.9k",
@@ -73,8 +71,6 @@
     },
     {
       "name": "PaddleFormers",
-      "status": "Active",
-      "statusClass": "status-active",
       "owner": "PaddlePaddle",
       "repo": "PaddleFormers",
       "stars": "12.9k",
@@ -82,8 +78,6 @@
     },
     {
       "name": "ERNIE",
-      "status": "Active",
-      "statusClass": "status-active",
       "owner": "PaddlePaddle",
       "repo": "ERNIE",
       "stars": "7.5k",
@@ -91,8 +85,6 @@
     },
     {
       "name": "PaddleX",
-      "status": "Active",
-      "statusClass": "status-active",
       "owner": "PaddlePaddle",
       "repo": "PaddleX",
       "stars": "5.9k",

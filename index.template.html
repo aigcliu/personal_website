@@ -85,8 +85,8 @@
             <nav class="nav" role="navigation" aria-label="Main navigation">
                 <a href="#about" class="nav-link" aria-label="Navigate to About section">About</a>
                 <a href="#news" class="nav-link" aria-label="Navigate to News section">News</a>
-                <a href="#publications" class="nav-link" aria-label="Navigate to Publications section">Publications</a>
                 <a href="#projects" class="nav-link" aria-label="Navigate to Projects section">Projects</a>
+                <a href="#publications" class="nav-link" aria-label="Navigate to Publications section">Publications</a>
                 <!-- 主题切换按钮 -->
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
                     <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -204,9 +204,6 @@
                 </div>
             </section>
 
-            <!-- 学术论文 -->
-            {{PUBLICATIONS_SECTION}}
-
             <!-- 核心项目 -->
             <section id="projects" class="content-section" aria-labelledby="projects-title">
                 <h2 id="projects-title" class="section-title">Key Open-Source Projects</h2>
@@ -216,6 +213,9 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 学术论文 -->
+            {{PUBLICATIONS_SECTION}}
         </main>
     </div>
 

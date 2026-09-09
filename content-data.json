@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "Jul 2026",
+      "textHtml": "Our three works, <a href=\"https://arxiv.org/abs/2608.10684\" target=\"_blank\" rel=\"noopener noreferrer\">RISTER</a>, <a href=\"https://arxiv.org/abs/2603.04205\" target=\"_blank\" rel=\"noopener noreferrer\">Real5-OmniDocBench</a>, and <a href=\"https://arxiv.org/abs/2606.23344\" target=\"_blank\" rel=\"noopener noreferrer\">RT-DocLayout</a>, have been accepted by ECCV 2026!"
+    },
+    {
       "date": "Jun 2026",
       "textHtml": "We open-sourced <a href=\"https://arxiv.org/abs/2606.13108\" target=\"_blank\" rel=\"noopener noreferrer\">PP-OCRv6</a>, a three-tier OCR model family (1.5M/7.7M/34.5M) that surpasses mainstream VLMs with major accuracy gains, unified support for 50 languages, and faster inference across CPU, Apple M4, and GPU deployments."
     },
@@ -277,6 +281,27 @@
       "id": "conference-papers",
       "name": "Conference Papers",
       "items": [
+        {
+          "number": "[C26]",
+          "url": "https://arxiv.org/abs/2608.10684",
+          "title": "Embedding Rotation Invariance for Provable Multi-Oriented Scene Text Recognition",
+          "venue": "ECCV 2026",
+          "authorsHtml": "Zhibin Ma, Pengwen Dai, <strong>Yi Liu</strong>, Xugong Qin, Chenyun Yu, Xiaochun Cao"
+        },
+        {
+          "number": "[C25]",
+          "url": "https://arxiv.org/abs/2603.04205",
+          "title": "Real5-OmniDocBench: A Full-Scale Physical Reconstruction Benchmark for Robust Document Parsing in the Wild",
+          "venue": "ECCV 2026",
+          "authorsHtml": "Changda Zhou, Ziyue Gao, Xueqing Wang, Tingquan Gao, Cheng Cui, Jing Tang, <strong>Yi Liu</strong>"
+        },
+        {
+          "number": "[C24]",
+          "url": "https://arxiv.org/abs/2606.23344",
+          "title": "RT-DocLayout: Real-Time End-to-End Document Layout Analysis with Reading Order in the Wild",
+          "venue": "ECCV 2026",
+          "authorsHtml": "Cheng Cui, Tingquan Gao, Xueqing Wang, Changda Zhou, Hongen Liu, Ting Sun, Yubo Zhang, Zelun Zhang, Jiaxuan Liu, Manhui Lin, Yue Zhang, Suyin Liang, Yiqing Xiang, <strong>Yi Liu</strong>"
+        },
         {
           "number": "[C23]",
           "url": "https://arxiv.org/abs/2506.07963",

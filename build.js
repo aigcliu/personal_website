@@ -202,12 +202,13 @@ function renderPublicationCategory(category) {
         )
         .join('\n\n');
 
+    const collapsedClass = category.expanded ? '' : ' collapsed';
     return `                    <div class="publication-category">
-                        <h3 id="${titleId}" class="publication-category-title collapsible-title collapsed" data-target="${category.id}" role="button" aria-expanded="false" aria-controls="${category.id}" tabindex="0">
+                        <h3 id="${titleId}" class="publication-category-title collapsible-title${collapsedClass}" data-target="${category.id}" role="button" aria-expanded="${category.expanded ? 'true' : 'false'}" aria-controls="${category.id}" tabindex="0">
                             ${category.name} <span class="collapse-icon" aria-hidden="true">▼</span>
                         </h3>
 
-                        <div class="publication-list collapsed" id="${category.id}" role="region" aria-labelledby="${titleId}">
+                        <div class="publication-list${collapsedClass}" id="${category.id}" role="region" aria-labelledby="${titleId}">
 ${itemsHtml}
                         </div>
                     </div>`;

@@ -280,6 +280,7 @@
     {
       "id": "conference-papers",
       "name": "Conference Papers",
+      "expanded": true,
       "items": [
         {
           "number": "[C26]",
@@ -468,6 +469,7 @@
     {
       "id": "journal-papers",
       "name": "Journal Papers",
+      "expanded": true,
       "items": [
         {
           "number": "[J7]",
